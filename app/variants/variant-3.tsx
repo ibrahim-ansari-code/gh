@@ -38,7 +38,7 @@ export default function TablingosLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative px-4 md:px-8 py-12 md:py-20" data-landright-section="Hero">
+      <section className="relative px-4 md:px-8 py-12 md:py-20" data-landright-section="hero">
         <div className="max-w-7xl mx-auto">
           {/* Diagonal Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
@@ -60,15 +60,26 @@ export default function TablingosLanding() {
                 </p>
               </div>
               
-              <button 
-                onClick={handleCallClick}
-                className="bg-[#ff6b35] hover:bg-[#e55a2b] text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
-                style={{
-                  clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 100%, 16px 100%)'
-                }}
-              >
-                START TRANSFORMATION
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button 
+                  onClick={handleCallClick}
+                  className="bg-[#ff6b35] hover:bg-[#e55a2b] text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  style={{
+                    clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 100%, 16px 100%)'
+                  }}
+                >
+                  GET STARTED NOW
+                </button>
+                <button 
+                  onClick={handleCallClick}
+                  className="border-2 border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105"
+                  style={{
+                    clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 100%, 16px 100%)'
+                  }}
+                >
+                  BOOK DEMO
+                </button>
+              </div>
             </div>
             
             {/* Angular Data Visualization */}
@@ -139,7 +150,7 @@ export default function TablingosLanding() {
       </section>
 
       {/* Mid-Section CTA */}
-      <section className="relative px-4 md:px-8 py-16" data-landright-section="MidCTA">
+      <section className="relative px-4 md:px-8 py-16" data-landright-section="midcta">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-[#16213e] p-12 transform -skew-x-1">
             <div className="transform skew-x-1">
@@ -147,15 +158,26 @@ export default function TablingosLanding() {
                 <span className="text-[#ff6b35]">READY TO</span> STREAMLINE?
               </h2>
               <p className="text-xl text-gray-300 mb-8">Let your data work for you, not against you</p>
-              <button 
-                onClick={handleCallClick}
-                className="bg-[#ff6b35] hover:bg-[#e55a2b] text-white px-10 py-5 text-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
-                style={{
-                  clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 100%, 20px 100%)'
-                }}
-              >
-                BOOK YOUR CALL
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button 
+                  onClick={handleCallClick}
+                  className="bg-[#ff6b35] hover:bg-[#e55a2b] text-white px-10 py-5 text-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  style={{
+                    clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 100%, 20px 100%)'
+                  }}
+                >
+                  SCHEDULE CALL
+                </button>
+                <button 
+                  onClick={handleCallClick}
+                  className="border-2 border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-10 py-5 text-xl font-bold transition-all duration-300 transform hover:scale-105"
+                  style={{
+                    clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 100%, 20px 100%)'
+                  }}
+                >
+                  VIEW DEMO
+                </button>
+              </div>
             </div>
           </div>
         </div>
